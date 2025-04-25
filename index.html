@@ -1,130 +1,74 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kahve Tarifleri </title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-             padding-bottom: 80px;
-        }
+  <meta charset="UTF-8">
+  <title>Kahve Tarifleri</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fdfaf6;
+      padding-bottom: 120px; /* Footer'la çakışmaması için boşluk */
+    }
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+    .header {
+      text-align: center;
+      padding: 20px;
+      background: #c69c6d;
+      color: white;
+      font-size: 24px;
+    }
 
-        h1 {
-            margin: 0;
-            font-size: 36px;
-        }
+    .tarif {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 20px;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
+    .tarif img {
+      max-width: 300px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
 
-        .section-title {
-            font-size: 30px;
-            color: #333;
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
+    .tarif-bilgi {
+      max-width: 600px;
+    }
 
-        .recipe {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            margin-bottom: 40px;
-        }
-
-        .recipe-text {
-            width: 60%;
-            padding-right: 20px;
-        }
-
-        .recipe-img {
-            width: 35%;
-        }
-
-        .recipe-img img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        h2 {
-            color: #333;
-            font-size: 28px;
-        }
-
-        p {
-            font-size: 18px;
-            color: #666;
-            line-height: 1.6;
-        }
-        footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: #e0dcd5; /* daha açık gri-bej ton */
-        color: #333; /* koyu yazı rengi, kontrast için */
-        text-align: center;
-        padding: 15px;
-}
- 
-    </style>
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #e0e0e0; /* Açık gri renk */
+      color: #333;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* hafif gölge */
+    }
+  </style>
 </head>
 <body>
 
-<header>
-    <h1>Kahve Tarifleri</h1>
-</header>
+  <div class="header">☕ SICAKLAR</div>
 
-<div class="container">
-    <!-- SICAKLAR Başlığı -->
-    <div class="section-title">SICAKLAR</div>
-
-    <!-- Espresso Tarifi -->
-    <div class="recipe">
-        <div class="recipe-text">
-            <h2>Espresso Tarifi</h2>
-            <p><strong>Miktar:</strong> 30 ml</p>
-            <p><strong>Kahve Miktarı:</strong> 8 gram</p>
-            <p><strong>Öğütme:</strong> Sofra tuzu kalınlığında</p>
-            <p><strong>Kavurma Profili:</strong> Orta veya orta-üstü kavrulmuş espresso çekirdekleri</p>
-            <p><strong>Sıcaklık:</strong> 93°C - 97°C</p>
-            <p><strong>pH Değeri:</strong> 7 - 13</p>
-            <p><strong>Demleme Süresi:</strong> 21 - 30 saniye</p>
-
-            <h3>Hazırlık:</h3>
-            <p>Öğütülmüş kahve, portafiltreye (kaşık) konulur ve iyice temperlenerek sıkıştırılır. Portafiltre espresso makinesine yerleştirildikten sonra, 3 saniye içerisinde başlat tuşuna basılır. Bu adım, portafiltrede bekleyen eski suyun kahveyi ıslatmasını önlemek için önemlidir.</p>
-            <p>Espresso makinesi, kahve ile buluşan sıcak suyu yüksek basınçla geçirerek 30 ml’lik yoğun bir çözelti elde eder. Bu sıvıya “espresso” adı verilir.</p>
-        </div>
-        <div class="recipe-img">
-            <img src="images/tarif1.jpg" alt="Espresso Fotoğrafı">
-        </div>
+  <div class="tarif">
+    <img src="images/espresso.jpeg" alt="Espresso">
+    <div class="tarif-bilgi">
+      <h2>Espresso Reçetesi</h2>
+      <p><strong>Miktar:</strong> 30 ml</p>
+      <p><strong>Kahve Miktarı:</strong> 8 gram</p>
+      <p><strong>Öğütme:</strong> Sofra tuzu kalınlığında</p>
+      <p><strong>Kavurma:</strong> Orta/Orta-üstü espresso çekirdekleri</p>
+      <p><strong>Sıcaklık:</strong> 93°C - 97°C</p>
+      <p><strong>pH:</strong> 7 - 13</p>
+      <p><strong>Süre:</strong> 21 - 30 saniye</p>
+      <p><strong>Hazırlık:</strong> Öğütülmüş kahve portafiltreye konulur, sıkıştırılır. 3 saniye içinde başlat tuşuna basılır. Yüksek basınçlı sıcak su ile 30 ml espresso elde edilir.</p>
     </div>
+  </div>
 
-    <!-- Devamı gelecek -->
-
-</div>
-
- <footer>
-    <section class="about">
-      <h2>Hakkımda</h2>
-      <p>Merhaba! Kahve yapmayı çok seviyorum ve tariflerimi bu blogda paylaşıyorum.</p>
-    </section>
+  <footer>
+    © 2025 Kahve Tarifleri Blogu – Hazırlayan: Sen ☕
   </footer>
 
 </body>
